@@ -5,6 +5,7 @@ ufw:
   enabled: true
   settings:
     loglevel: 'low'
+    ipv6: false
   applications:
     MySQL:
       comment: Allow MySQL

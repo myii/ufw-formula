@@ -13,4 +13,6 @@ ufw-package-install-pkg-installed:
 ufw-package-{{ pkg }}-install-pkg-installed:
   pkg.installed:
     - name: {{ pkg }}
+    - onlyif:
+      - fun: test.false
 {%- endfor %}
